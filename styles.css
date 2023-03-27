@@ -9,7 +9,18 @@ h1 {
     color: rgb(24, 239, 175);
     -moz-box-flex: initial; background-color: rgb(22, 145, 216);
 }
-
 .fender {
-   
+    background-image: url(./imagenes/fender.jpg);
+    background-repeat: no-repeat;
+    background-position: 
+    center center;
+    height: 600px;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.frase {
+    font-family:  'Lucida Sans', Arial, sans-serif;
+    color: lawngreen;
+    font-size: 60px;
+    
 }
