@@ -4,66 +4,101 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Megathlon Rock House</title>
-    <link rel="icon" type="image/vnd.microsoft.icon" href="./imagenes/favicon.ico">
-    <link rel="stylesheet" href="styles.css">
+            <!--esto para arriba no se toca sólo cambia el lang a "ES"-->
+            <!--aca abajo van los METADATOS (meta) son para posicionamiento web basicamente-->
+    <meta name="description" content="Venta de Instrumentos musicales">
+            <!--esto es la descripción de nuestra web-->
+    <meta name="keywords" content="Guitarras eléctricas, guitarras acústicas, bajos electricos, baterias, micrófonos, amplificadores, banda de música">
+            <!--esto significa añadir palabras claves para los buscadores-->
+    <meta name="author" content="Megathlon">
+            <!--el nombre de la empresa-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="./dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./dist/css/bootstrap.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Megathlon Rock House / Venta de instrumentos musicales</title>
+    <!--aca abajo está el favicon del sitio-->
+    <link rel="icon" href="./imagenes/favicon.png" type="image/png" sizes="512-FAV">
 
 </head>
 <body>
-    <header>
-        <div class="container-logo"> <img class= "logo"src="./imagenes/logo landing.png" alt="logo landing" height="60  px" width="60px" >
+    <!--ACA ESTA EL INICIO DE LA BARRA DE NAVEGACION O MENU DE LA WEB-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <!--en esta linea abajo se cambió el icono. No es de IconScout, es propio!-->
+          <a class="navbar-brand" href="#"><img src="./imagenes/favicon logo menu.png" alt="Megathlon"></a>
+          
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!--aca se usa flex-box-->
+            <ul class="navbar-nav d-flex justify-content-center align-items-center">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Sucursales</a>
+            </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+                  Productos
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Acción</a></li>
+                    <li><a class="dropdown-item" href="#">Otra acción</a></li>
+                    <li><a class="dropdown-item" href="#">Algo más aquí</a></li>
+                </li>
+            </ul>
+            </li>
+              <li class="nav-item">
+                <a class="nav-link active">Contacto</a>
+            </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Buscá tu instrumento" aria-label="Buscar">
+              <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+          </div>
         </div>
-<nav> 
-    <div class="container-fluid">
-    <div class="menu">
-        
-        <button type="button" class="btn btn-Guitarras">Guitarras</button>
-
-        <button type="button" class="btn btn-Baterías">Baterías</button>
-
-        <button type="button" class="btn btn-Teclados y pianos">Teclados y pianos</button>
-
-        <button type="button" class="btn btn-Bajos">Bajos</button>
-
-        <button type="button" class="btn btn-Equipos">Equipos</button>
-
-        <button type="button" class="btn btn-Instrumentos de viento">Instrumentos de viento</button>
-
-        <button type="button" class="btn btn-Micrófonos">Micrófonos</button>
-     </div>
-    </div>
-</nav>  
-    </header>
+      </nav>
+    </nav>
+      <!--link a IconScout-->
+      <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <!--ACA TERMINA EL MENU DE LA WEB-->  
+    </head>
     <main>
 
 <article class="fender"> 
-    <h2 class="frase">Da lo mejor de vos</h2>
+       
 </article>
 
-        <span class="articulos">
-    <img src="./imagenes/guitarraElectrica.jpg" alt="Guitarra electrica"></li>
-    <img src="./imagenes/consola.jpg" alt="Consola"></li>
-    <img src="./imagenes/bateria.jpg" alt="Batería"></li>
-        </span>
+<span class="articulos">
+    <li class="tira de instrumentos"> 
+      <img src="./imagenes/fender.png" alt="fender logo">
+      <img src="./imagenes/Ibanez.png" alt="Ibanez logo">
+      <img src="./imagenes/JBL.png" alt="JBL">
+      <img src="./" alt="">
+      
+    </li>
+</span>
 
 
-    </main>
-    <footer>
-        <div class="logo-footer"><img src="./imagenes/logo landing.png" alt="logo Grupo 6 C184" height="60px" width="60px
+</main>
+<footer>
+    <div class="logo-footer"><img src="./imagenes/favicon.png" alt="logo Grupo 6 C184" height="60px" width="60px
             "></div>
-    <div class="copyright">
+        <div class="copyright">
         <p>&copy 2023 por Vero, Pato, Guille y Marcelo</p>
-       </div>
-    <div class="redes-sociales"><img src="./imagenes/redes.png" alt="redes sociales" height="auto" width="120px">
-        <p> Seguinos en nuestras redes</p>
-       </div>
+        </div>
+        <div class="redes-sociales"><img src="./imagenes/redes.png" alt="redes sociales">
+        
+    </div>
 
 
-    </footer>
+</footer>
     
     
 </body>
