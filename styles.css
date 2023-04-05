@@ -1,3 +1,4 @@
+
 *{
     margin: auto;
 }
@@ -15,7 +16,15 @@ body {
     margin-bottom: 260px;
     border-radius: 10px;
     
+
+
 }
+
+.equipo {
+       color: #e9ecef;
+
+}
+
 .navbar {
     padding: 2rem;
     background-color:transparent;
@@ -52,6 +61,15 @@ body {
     justify-content:space-between;
     
 }
+
+.contacto {
+      color: bisque;
+      font-size: 20px;
+     
+      text-align: center;
+      
+}
+
 .btn {
     background-color:orangered;
     color: white;
@@ -118,4 +136,10 @@ img {
 
 .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
     color: #e9ecef;
+
+}
+
+.nav-link.active {
+    background-color: black;
+
 }
