@@ -8,7 +8,7 @@
             <!--aca abajo van los METADATOS (meta) son para posicionamiento web basicamente-->
     <meta name="description" content="Venta de Instrumentos musicales">
             <!--esto es la descripción de nuestra web-->
-    <meta name="keywords" content="Guitarras eléctricas, guitarras acústicas, bajos electricos, baterias, micrófonos, amplificadores, banda de música">
+    <meta name="keywords" content="Guitarra eléctrica, guitarra acústica, bajo, batería, micrófono, amplificador, casa de música, equipo de sonido">
             <!--esto significa añadir palabras claves para los buscadores-->
     <meta name="author" content="Megathlon">
             <!--el nombre de la empresa-->
@@ -17,12 +17,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./dist/css/bootstrap.css">
     <link rel="stylesheet" href="styles.css">
+    
     <title>Megathlon Rock House / Venta de instrumentos musicales</title>
     <!--aca abajo está el favicon del sitio-->
     <link rel="icon" href="./imagenes/favicon.png" type="image/png" sizes="512-FAV">
 
 </head>
 <body>
+  <header>
     <!--ACA ESTA EL INICIO DE LA BARRA DE NAVEGACION O MENU DE LA WEB-->
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
@@ -43,27 +45,29 @@
             <li class="nav-item">
                 <a class="nav-link" href="#">Sucursales</a>
             </li>
-              <li class="nav-item dropdown">
+
+              <li class="nav-item dropdown" data-bs-theme="dark">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="true">
                   Productos
                 </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="#">Acción</a></li>
-                    <li><a class="dropdown-item" href="#">Otra acción</a></li>
-                    <li><a class="dropdown-item" href="#">Algo más aquí</a></li>
-                </li>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown" >
+                    <li><a class="dropdown-item" href="#">Guitarras y bajos</a></li>
+                    <li><a class="dropdown-item" href="#">Baterías y percusión</a></li>
+                    <li><a class="dropdown-item" href="#">Teclados y pianos</a></li>
+                    <li><a class="dropdown-item" href="#">Amplificadores</a></li>
+                   
+              </li>
+              
              </ul>
-             </li>
+             
               <li class="nav-item">
-
-                <!--modifiqué Contacto-->
-                <button><a href="./contacto.html" class="nav-link active"  target="_blank" >Contacto</button></a>
+                <button class="nav-link active" ><a class="contacto" href="./contacto.html" target="_blank" >Contacto</button></a>
             </li>
             </ul>
 
             <form class="d-flex" role="search">
               <input class="form-control me-2" type="search" placeholder="Buscá tu instrumento" aria-label="Buscar">
-              <button class="btn btn-outline-success" type="submit">Buscar</button>
+              <button class="btn btn-secondary" type="submit">Buscar</button>
             </form>
           </div>
         </div>
@@ -72,25 +76,60 @@
       <!--link a IconScout-->
       <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
     <!--ACA TERMINA EL MENU DE LA WEB-->  
-    </head>
+    </header>
+
   <main>
     <br>
-    <br>
-    <div class="promo" style="width: 18rem;">
-      <img src="./imagenes/iloverock.jpg" class="card-img-top" alt="promo">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">conseguilo ahora</a>
-      </div>
+    <div class="banner">
+      <img class="banner1" src="./imagenes/banner promo.jpg" alt="promocion fender">
     </div>
     
+    <br>
+    <br>
+    <!--carrousel-->
+    
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./imagenes/jam.jpg" class="d-block w-100" alt="Guitarras en exhibición">
+          <div class="carousel-caption">
+            <h1>Guitarras en exhibición</h1>
+            <p>Visítanos y encuentra la guitarra de tus sueños</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./imagenes/microfonos.jpg" class="d-block w-100" alt="promo 50 off microfonos">
+          <div class="carousel-caption">
+            <h1 class="Texto en carrousel">Micrófonos en oferta!!</h1>
+            <p class="parrafos carrousel">50% off con todos los medios de pago</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./imagenes/sala de grabacion.jpg" class="d-block w-100" alt="sala de grabacion">
+          <div class="carousel-caption">
+            <h1>Probá tu instrumento</h1>
+            <p>En nuestra sala de sonido profesional</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    
+   
+    
+    <!--fin de carousel-->
 
-   <article class="equipo"> <p><h5>Probamos el nuevo Gallien Krueger MB210</h5></p> <a href="https://www.youtube.com/watch?v=qM_TtwrYFn8&ab_channel=Electr%C3%B3nicaparaM%C3%BAsicos" target="_blank"> <img src="./imagenes/equipo.jpg" alt="Equipo de bajo Gallien Krueger" > </a>
-</article>
-<article class="fender"> 
-       
-</article>
+    
+    
+
+   
 
 
 <span class="articulos">
@@ -116,57 +155,15 @@
 
 </main>
 <footer>
-  <footer class="bg-dark text-center text-white">
-    <!-- Grid container -->
-    <div class="container p-4 pb-0">
-      <!-- Section: Social media -->
-      <section class="mb-4">
-        <!-- Facebook -->
-        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-          ><i class="fab fa-facebook-f"></i>
-        </a>
-  
-        <!-- Twitter -->
-        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-          ><i class="fab fa-twitter"></i>
-        </a>
-  
-        <!-- Google -->
-        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-          ><i class="fab fa-google"></i>
-        </a>
-  
-        <!-- Instagram -->
-        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-          ><i class="fab fa-instagram"></i>
-        </a>
-  
-        <!-- Linkedin -->
-        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-          ><i class="fab fa-linkedin-in"></i>
-        </a>
-  
-        <!-- Github -->
-        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-          ><i class="fab fa-github"></i>
-        </a>
-      </section>
-      <!-- Section: Social media -->
-    </div>
-    <!-- Grid container -->
-  
-    <!-- Copyright -->
-    <div class="text-center p-3" style="background-color: transparent;">
-      © 2023 Copyright:
-      <a class="text-white" href="https://gruposeis.com/">GrupoSeis</a>
-    </div>
-    <!-- Copyright -->
-  </footer>
+   
+
+
 </footer>
-<!-- Footer -->
     
     
 </body>
+<script src="./dist/js/bootstrap.bundle.min.js"></script>
 
-<link rel="stylesheet" href="scripts.js">
+
+
 </html>
