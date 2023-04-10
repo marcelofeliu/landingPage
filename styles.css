@@ -21,8 +21,13 @@ body {
 }
 
 .equipo {
-       color:white;
+       color: #e9ecef;
 
+}
+.logo {
+     justify-content: center;
+     
+    
 }
 
 .navbar {
@@ -30,34 +35,27 @@ body {
     background-color:transparent;
     
 }
+
 .nav-link {
-    font-family: 'Courier New', Courier, monospace;
-    
-    font-size: 19px;
-    color: white;
-    justify-content: center;
-}
-.nav-link-active {
-    font-family: 'Courier New', Courier, monospace;
-    background-color: transparent;
-    font-size: 19px;
+    font-family: Arial, "Helvetica", sans-serif;
+    font-size: 20px;
     color: white;
     justify-content: center;
 }
 .dropdown-menu {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 19px;
+    font-family: Arial, "Helvetica", sans-serif;
+    font-size: 20px;
     color: white;
+    background-color: transparent;
+    border-color: transparent;
        
-}
+      }
 
 .collapse-navbar-collapse {
     font-family: Arial, "Helvetica", sans-serif;
     font-size: 20px;
     color: white;
 }
-
-
 .navbar-toggler {
     color:white;
     
@@ -70,24 +68,36 @@ body {
     
 }
 
+.nav-link.active {
+    color: white;
+    background-color: transparent;
+
+}
 .contacto {
       color:white;
-      font-size: 19px;
-     
-      text-align: center;
-      
+      font-size: 20px;
+      text-align: center; 
+      text-decoration: none;  
 }
 
+.contacto:hover{
+    color:orangered
+}
 .btn {
     background-color:orangered;
     color: white;
-    
-
-
-
+    border-color: transparent;
+}
+.btn:hover {
+    background-color: black;
+}
+.d-block-w-100{
+    font-family: Arial, "Helvetica", sans-serif;
+    color: orangered;
 }
 
 .fender {
+
     background-image: url(./imagenes/musico-tocando.jpg);
     background-repeat:repeat;
     background-position: center; 
@@ -95,7 +105,38 @@ body {
     background-attachment: fixed;
     background-size:cover
 }
+.imgnormalizada img {
+    width: auto;
+    height: 500px;
+    max-height: 500px;
+    border-radius: 20px;
+}
+.carousel-inner {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+}
+.encabezados {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+.article {
+    display: inline-block;
+    width: 33%;
+    vertical-align: top;
+    padding: 20px;
+    box-sizing: border-box;
+    color: white;
+}
 
+
+  
+.article img {
+    width: 100%;
+    
+  }
+.feria img {
+    height: auto;
+  }
 
 .articulos {
     background-color:transparent;
@@ -104,22 +145,19 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-} 
+}    
 
 
-.frase {
-    text-align: center;
-    font-family: 'Bebas Neue', cursive;
-    color: rgb(255, 255, 255);
-    font-size: 120px;
-    font-stretch: normal;
-    
+
+.copyright {
+    font-family: Helvetica; color: white;margin-block: 20px; margin-left: 40px;
+    font-size: 10pt;
+
 }
-
-
-
-
-
+.logo {
+    margin-top: 40px;
+    margin-left: 30px;
+}
 .logo-footer {
     margin-block: 10px; 
     margin-left: 40px; 
@@ -137,89 +175,14 @@ img {
 
 }
 
-.logo{
-    display: flex;
-    object-fit: contain;
-}
-
-.img{
-    align-self: center;
-    width: 10%;
-    height: 5em;
-    
-}
-
 .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
     color: #e9ecef;
 
 }
 
-.nav-link.active {
-    background-color: black;
-
-}
-.boton-form {
-    background-color: orangered;
-    border-radius: 15px;
-    font-size: 15pt;
-    padding: auto;
-    font-family: 'Courier New', Courier, monospace;
-    align-items: center;
-}
-.input1 {
-    background-color: white;
-    border-radius: 8px;
-    margin: 2px;
-    padding-left: 1cm;
-    font-family: 'Courier New', Courier, monospace;
-    align-items:center;
-
-}
-input.type1 {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 20px;
-    align-items: center;
-
-}
-.input-text {
-    background-color: white;
-    border-radius: 8px;
-    padding: 3rem;
-    margin: 2px;
-    padding-left: 10px;
-    font-family: 'Courier New', Courier, monospace;
-    
-
+.nav-link:hover {
+    color:orangered;
 }
 
-.form {
-    width: 100%;
-    max-width: 600px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+
   
-  .form input {
-    width: 60%;
-    height: 40px;
-    margin: 0.5rem;
-  }
-  
-  .form button {
-    padding: 0.5em 1em;
-    border: none;
-    background-color: orangered;
-    cursor: pointer;
-  }
-  
-  .footer {
-    background-color: transparent;
-  }
-  .text-white{
-    font-family: 'Courier New', Courier, monospace;
-    color: white;
-    opacity: 40%;
-  }
