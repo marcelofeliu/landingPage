@@ -1,7 +1,14 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;700&display=swap');
+
+
 *{
-    margin: auto;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Comfortaa', cursive;
 }
+
 
 body {
     background-image: url(./imagenes/musico-tocando.jpg);
@@ -25,10 +32,13 @@ body {
 
 }
 .logo {
-     justify-content: center;
+     
+    justify-content: center;
+     margin: 20px;
      
     
 }
+
 
 .navbar {
     padding: 2rem;
@@ -37,23 +47,24 @@ body {
 }
 
 .nav-link {
-    font-family: Arial, "Helvetica", sans-serif;
-    font-size: 20px;
+    font-family: 'Comfortaa', cursive;
+    font-size: 17px;
     color: white;
     justify-content: center;
 }
 .dropdown-menu {
-    font-family: Arial, "Helvetica", sans-serif;
-    font-size: 20px;
+    font-family: 'Comfortaa', cursive;
+    font-size: 17px;
     color: white;
     background-color: transparent;
     border-color: transparent;
        
       }
+  
 
 .collapse-navbar-collapse {
-    font-family: Arial, "Helvetica", sans-serif;
-    font-size: 20px;
+    font-family: 'Comfortaa', cursive;
+    font-size: 17px;
     color: white;
 }
 .navbar-toggler {
@@ -75,7 +86,7 @@ body {
 }
 .contacto {
       color:white;
-      font-size: 20px;
+      font-size: 17px;
       text-align: center; 
       text-decoration: none;  
 }
@@ -92,9 +103,10 @@ body {
     background-color: black;
 }
 .d-block-w-100{
-    font-family: Arial, "Helvetica", sans-serif;
+    font-family: 'Comfortaa', cursive;
     color: orangered;
 }
+
 
 .fender {
 
@@ -112,11 +124,11 @@ body {
     border-radius: 20px;
 }
 .carousel-inner {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Comfortaa', cursive;
     font-size: 25px;
 }
 .encabezados {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Comfortaa', cursive;
     
 }
 .article {
@@ -136,21 +148,31 @@ body {
   }
 .feria img {
     height: auto;
+    justify-content: center;
   }
 
 .articulos {
-    background-color:transparent;
-    opacity:20%;
-    margin-right: auto;
+    padding: 20px;
+    background-color:black;
+    opacity:30%;
+    margin-top: 30px;
+    margin-bottom: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
-}    
 
+} 
+.tira.de.instrumentos img:hover {
+    opacity: 0.5;
+    
+  }
 
 
 .copyright {
-    font-family: Helvetica; color: white;margin-block: 20px; margin-left: 40px;
+    font-family: 'Comfortaa', cursive; 
+    color: white;
+    margin-block: 20px; 
+    margin-left: 40px;
     font-size: 10pt;
 
 }
@@ -176,13 +198,15 @@ img {
 }
 
 .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
-    color: #e9ecef;
+    color: white;
 
 }
 
 .nav-link:hover {
     color:orangered;
 }
+
+
 
 
   
