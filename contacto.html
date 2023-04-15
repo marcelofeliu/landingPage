@@ -1,36 +1,116 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+            
+            <!--aca abajo van los METADATOS (meta) son para posicionamiento web basicamente-->
+    <meta name="description" content="Venta de Instrumentos musicales">
+            <!--esto es la descripción de nuestra web-->
+    <meta name="keywords" content="Guitarra eléctrica, guitarra acústica, bajo, batería, micrófono, amplificador, casa de música, equipo de sonido">
+            <!--esto significa añadir palabras claves para los buscadores-->
+    <meta name="author" content="Megathlon">
+            <!--el nombre de la empresa-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
     <link rel="stylesheet" href="./dist/css/bootstrap.css">
-    <div class="logo"><img  src="./imagenes/megathlon2 logo.png" alt="logo Megathlon"></div>
-    <title>Contacto</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    <title>Megathlon Rock House / Venta de instrumentos musicales</title>
+    <!--aca abajo está el favicon del sitio-->
     <link rel="icon" href="./imagenes/favicon.png" type="image/png" sizes="512-FAV">
+
 </head>
-
-
 <body>
-    <header>
+  <header>
+  
 
+    <!--ACA ESTA EL INICIO DE LA BARRA DE NAVEGACION O MENU DE LA WEB-->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <!--en esta linea abajo se cambió el icono. No es de IconScout, es propio!-->
+          <a class="navbar-brand" href="#"><img src="./imagenes/favicon logo menu.png" alt="Megathlon">
+            <a class="logo" href="#"> <img src="./imagenes/megathlon2 logo.png" style="max-width: 100%; padding: 20px;"></a>
+          
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!--aca se usa flex-box-->
+            <ul class="navbar-nav d-flex justify-content-center align-items-center">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Inicio</a>
+              </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Sucursales</a>
+            </li>
+
+              <li class="nav-item dropdown" data-bs-theme="dark">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+                  Productos
+                </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown" >
+                    <li><a class="dropdown-item" href="#">Guitarras y bajos</a></li>
+                    <li><a class="dropdown-item" href="#">Baterías y percusión</a></li>
+                    <li><a class="dropdown-item" href="#">Teclados y pianos</a></li>
+                    <li><a class="dropdown-item" href="#">Amplificadores</a></li>
+                   
+              </li>
+              
+             </ul>
+             
+              <li class="nav-item">
+                <button class="nav-link active" ><a class="contacto" href="./contacto.html" target="_blank" >Contacto</button></a>
+            </li>
+            </ul>
+
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Buscá tu instrumento" aria-label="Buscar">
+              <button class="btn btn-secondary" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </nav>
+      <!--link a IconScout-->
+      <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <!--ACA TERMINA EL MENU DE LA WEB-->  
     </header>
+
     <main>
-        <p style="text-align:center;"><img src="./imagenes/axelrose.png" alt="axelrose"></p>
+        
+   
         <span class="contacto">
-          <form class="form">
-          <label class="type1" for="nombre">Nombre</label>
-          <input class="input1" type="text" id="nombre" placeholder="tu nombre">
-          <label class="type1" for="email">Email</label>
-          <input class="input1" type="text" id ="email" placeholder="tunombre@gmail.com">
-          <label for="mensaje">Mensaje</label>
-          <input class="input-text" type="text" id="mensaje" placeholder="Escribe aqui tu mensaje"><br>
-      
-          <button type="button" class="boton-form">Enviar</button>
-            </span>
-        </form>
+            <div class="container">
+                <form action="enviar">
+              
+                  <label for="fname">Nombre</label>
+                  <input type="text" id="fname" name="firstname" placeholder="Nombre">
+              
+                  <label for="lname">Apellido</label>
+                  <input type="text" id="lname" name="lastname" placeholder="Apellido">
+              
+                  <label for="pais">Pais</label>
+                  <select id="pais" name="pais">
+                    <option value="argentina">Argentina</option>
+                    <option value="uruguay">Uruguay</option>
+                    <option value="brasil">Brasil</option>
+                    <option value="chile">Chile</option>
+                    <option value="bolivia">Bolivia</option>
+                    <option value="paraguay">Paraguay</option>
+                  </select>
+              
+                  <label for="subject">Consulta</label>
+                  <textarea id="asunto" name="subject" placeholder="Dejanos tu consulta" style="height:200px"></textarea>
+              
+                  <input type="enviar" value="Enviar">
+              
+                </form>
+              </div>
         
 
     </main>
