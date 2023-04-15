@@ -41,8 +41,8 @@ body {
 
 
 .navbar {
-    padding: 2rem;
-    background-color:transparent;
+    padding: 1rem;
+    background-color:black;
     
 }
 
@@ -153,7 +153,7 @@ body {
 
 .articulos {
     padding: 20px;
-    background-color:black;
+    background-color: transparent;
     opacity:30%;
     margin-top: 30px;
     margin-bottom: 30px;
@@ -165,8 +165,42 @@ body {
 .tira.de.instrumentos img:hover {
     opacity: 0.5;
     
-  }
+}
 
+
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid orangered;
+    border-radius: 10px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical 
+  }
+  
+  input[type=enviar] {
+    background-color: orangered;
+    color: white;
+    text-align: center;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  /* cambia el color cuando se pasa el cursor sobre el boton */
+  input[type=enviar]:hover {
+    background-color:black;
+  }
+  
+  /* fondo del formulario */
+  .container {
+    border-radius: 10px;
+    background-color: black ;
+    padding: 20px;
+  }
 
 .copyright {
     font-family: 'Comfortaa', cursive; 
