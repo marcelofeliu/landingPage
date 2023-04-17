@@ -19,19 +19,8 @@ body {
     background-attachment: fixed;
     background-size: cover;
 }
-.poster {
-    padding-left: 40px;
-    margin-bottom: 260px;
-    border-radius: 10px;
-    
 
 
-}
-
-.equipo {
-       color: #e9ecef;
-
-}
 .logo {
      
     justify-content: center;
@@ -137,6 +126,7 @@ h1 {
     
 }
 h1.divisor {
+    padding: auto;
     text-align: center;
 }
 
@@ -172,9 +162,11 @@ p {
     margin: 20px;
 }
 h2 {
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 30px;
     padding-left: 15px;
-    color: orangered;
-}
+    color:white;
+    }
 .precio {
     font-family: 'Alfa Slab One', cursive;
     font-size: 30px;
@@ -182,13 +174,13 @@ h2 {
 }
 .comprar {
     padding: 10px;
-    background-color:orangered;
+    background-color:green;
     color: white;
     border-radius: 10px;
 }
 .comprar:hover{
-    background-color:green;
-    color: white;
+    background-color:greenyellow;
+    color: black;
 
 }
 .VerMas {
@@ -284,10 +276,7 @@ input[type=text], select, textarea {
 
 }
 
-.redes-sociales {
-    margin-block: 20px; 
-    margin-left: 1100px; 
-}
+
 
 img {
     padding-left: 10px;
@@ -303,6 +292,15 @@ img {
 .nav-link:hover {
     color:orangered;
 }
+.row{
+    text-align: left;
+}
+
+
+.p-4{
+    align-items: center;
+}
+
 
 
 
