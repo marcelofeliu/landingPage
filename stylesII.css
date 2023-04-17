@@ -1,0 +1,47 @@
+.contenedor-form-back {
+    background-color: rgb(181, 181, 181);
+}
+
+.contenedor-form-back1 {
+    background-color: rgb(255, 211, 154);
+}
+
+.tit-form {
+    color: black;
+}
+
+.contenedor form {
+    display: flex;
+}
+
+.contenedor form opc2 {
+    display: flex;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--bs-body-color);
+    background-color: var(--bs-body-bg);
+    background-clip: padding-box;
+    border: var(--bs-border-width) solid var(--bs-border-color);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0.375rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+Footer
+© 2023 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
